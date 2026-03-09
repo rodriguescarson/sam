@@ -90,7 +90,8 @@ function generateCursorRules(samDir, targetDir) {
     { name: 'iris', file: 'agents/ux-designer.md', display: 'Iris - UX Designer' },
     { name: 'cosmo', file: 'agents/css-reviewer.md', display: 'Cosmo - CSS Consistency Reviewer' },
     { name: 'sentinel', file: 'agents/security-reviewer.md', display: 'Sentinel - Security Reviewer' },
-    { name: 'aria', file: 'agents/accessibility-reviewer.md', display: 'Aria - Accessibility Reviewer' }
+    { name: 'aria', file: 'agents/accessibility-reviewer.md', display: 'Aria - Accessibility Reviewer' },
+    { name: 'upkeep', file: 'agents/dependency-upkeep.md', display: 'Upkeep - Dependency and Maintenance' }
   ];
 
   let rulesCount = 0;
@@ -170,6 +171,7 @@ Mention @sam-tdd with a PRD or feature description to start the pipeline.
 - @cosmo - CSS Consistency Reviewer (web apps only)
 - @aria - Accessibility Reviewer (web apps only)
 - @sentinel - Security Reviewer (optional)
+- @upkeep - Upkeep (dependency updates, on demand)
 - @sage - Technical Writer (documentation)
 - @iris - UX Designer (UX validation)
 `;
@@ -247,6 +249,12 @@ function generateAntigravitySkills(samDir, targetDir) {
       file: 'agents/accessibility-reviewer.md',
       display: 'Aria - Accessibility Reviewer',
       description: 'Accessibility review for web apps, WCAG, keyboard nav, semantics, contrast (after Cosmo)'
+    },
+    {
+      name: 'sam-upkeep',
+      file: 'agents/dependency-upkeep.md',
+      display: 'Upkeep - Dependency and Maintenance',
+      description: 'Dependency updates, lockfile maintenance, breaking-change assessment (on demand)'
     }
   ];
 
@@ -351,6 +359,7 @@ Provide a PRD or feature description to start the autonomous TDD pipeline.
 - /sam-cosmo - CSS Consistency Reviewer (web apps only)
 - /sam-aria - Accessibility Reviewer (web apps only)
 - /sam-sentinel - Security Reviewer (optional)
+- /sam-upkeep - Dependency and Maintenance (on demand)
 - /sam-sage - Technical Writer (documentation)
 - /sam-iris - UX Designer (UX validation)
 `;
@@ -462,6 +471,7 @@ function install(platform, targetDir) {
     log('    /sam:sam:agents:cosmo         - Cosmo (CSS Reviewer)');
     log('    /sam:sam:agents:sentinel      - Sentinel (Security Reviewer)');
     log('    /sam:sam:agents:aria          - Aria (Accessibility Reviewer)');
+    log('    /sam:sam:agents:upkeep        - Upkeep (Dependency and Maintenance)');
     log('    /sam:sam:agents:sage          - Sage (Tech Writer)');
     log('    /sam:sam:agents:iris          - Iris (UX Designer)');
     log('    /sam:core:workflows:autonomous-tdd - Full TDD Pipeline\n');
@@ -477,6 +487,7 @@ function install(platform, targetDir) {
     log('    @cosmo     - Cosmo (CSS Reviewer)');
     log('    @sentinel  - Sentinel (Security Reviewer)');
     log('    @aria      - Aria (Accessibility Reviewer)');
+    log('    @upkeep    - Upkeep (Dependency and Maintenance)');
     log('    @sage      - Sage (Tech Writer)');
     log('    @iris      - Iris (UX Designer)');
     log('    @sam-tdd   - Full TDD Pipeline\n');
@@ -492,6 +503,7 @@ function install(platform, targetDir) {
     log('    /sam-cosmo         - Cosmo (CSS Reviewer)');
     log('    /sam-sentinel      - Sentinel (Security Reviewer)');
     log('    /sam-aria          - Aria (Accessibility Reviewer)');
+    log('    /sam-upkeep        - Upkeep (Dependency and Maintenance)');
     log('    /sam-sage          - Sage (Tech Writer)');
     log('    /sam-iris          - Iris (UX Designer)');
     log('    /sam-tdd-pipeline  - Full TDD Pipeline\n');

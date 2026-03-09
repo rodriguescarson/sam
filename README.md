@@ -51,6 +51,7 @@ npx sam-agents --platform all          # All platforms
 | **Cosmo** | CSS Reviewer (web apps) | `/sam:sam:agents:cosmo` | `@cosmo` | `/sam-cosmo` |
 | **Sentinel** | Security Reviewer (optional) | `/sam:sam:agents:sentinel` | `@sentinel` | `/sam-sentinel` |
 | **Aria** | Accessibility Reviewer (web apps) | `/sam:sam:agents:aria` | `@aria` | `/sam-aria` |
+| **Upkeep** | Dependency and Maintenance (on demand) | `/sam:sam:agents:upkeep` | `@upkeep` | `/sam-upkeep` |
 | **Sage** | Technical Writer | `/sam:sam:agents:sage` | `@sage` | `/sam-sage` |
 | **Iris** | UX Designer | `/sam:sam:agents:iris` | `@iris` | `/sam-iris` |
 
