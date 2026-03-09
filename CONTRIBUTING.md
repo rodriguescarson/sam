@@ -82,7 +82,7 @@ When adding or modifying agents:
 2. **Clear responsibilities** - Each agent has a specific role; don't overlap
 3. **Consistent personality** - Agents have distinct communication styles
 4. **Update manifests** - Keep `_sam/_config/agent-manifest.csv` in sync
-5. **Keep templates in sync** - When adding or changing agents, update both `_sam/` and `templates/_sam/` (and `bin/cli.js` + README when adding agents). See [OPEN_SOURCE_PLAN.md](OPEN_SOURCE_PLAN.md).
+5. **Keep templates in sync** - When changing agents or config in `_sam/`, run `npm run sync-templates` to copy `_sam/` to `templates/_sam/`. Run before release or when adding/editing agents. (See [OPEN_SOURCE_PLAN.md](OPEN_SOURCE_PLAN.md).)
 
 ### Open-source–relevant skills
 
