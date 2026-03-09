@@ -49,6 +49,7 @@ npx sam-agents --platform all          # All platforms
 | **Dyna** | Developer (GREEN) | `/sam:sam:agents:dyna` | `@dyna` | `/sam-dyna` |
 | **Argus** | Code Reviewer (REFACTOR) | `/sam:sam:agents:argus` | `@argus` | `/sam-argus` |
 | **Cosmo** | CSS Reviewer (web apps) | `/sam:sam:agents:cosmo` | `@cosmo` | `/sam-cosmo` |
+| **Sentinel** | Security Reviewer (optional) | `/sam:sam:agents:sentinel` | `@sentinel` | `/sam-sentinel` |
 | **Sage** | Technical Writer | `/sam:sam:agents:sage` | `@sage` | `/sam-sage` |
 | **Iris** | UX Designer | `/sam:sam:agents:iris` | `@iris` | `/sam-iris` |
 
@@ -70,7 +71,8 @@ npx sam-agents --platform all          # All platforms
    - **REFACTOR**: Argus improves code quality
    - **UI**: Iris reviews layout and fixes alignment (web apps only)
    - **CSS**: Cosmo reviews styling consistency (web apps only)
-4. **Complete** - Sage generates documentation
+   - **Security** (optional): Sentinel reviews for vulnerabilities and secrets
+4. **Complete** - Sage generates documentation; Sentinel (optional) security audit
 
 ## What Gets Installed
 
